@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  server:
+    build:
+      context: .
+  envoy:
+    image: envoyproxy/envoy:v1.26-latest
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+    environment:
+      - ENVOY_UID=0
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml:ro
+      - ./internal/gen/ping/v1/ping.pb:/var/lib/proto/ping.pb:ro
+    depends_on:
+      - server
