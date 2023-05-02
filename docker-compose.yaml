@@ -12,6 +12,5 @@ services:
       - ENVOY_UID=0
     volumes:
       - ./envoy.yaml:/etc/envoy/envoy.yaml:ro
-      - ./internal/gen/ping/v1/ping.pb:/var/lib/proto/ping.pb:ro
     depends_on:
       - server

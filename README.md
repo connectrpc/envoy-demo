@@ -8,7 +8,7 @@ git clone https://github.com/bufbuild/connect-envoy-demo
 cd connect-envoy-demo
 ```
 
-Then run `docker-compose up` to run everything:
+Then run `docker-compose up` to start the demo:
 ```sh
 docker-compose up
 ```
