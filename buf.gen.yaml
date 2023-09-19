@@ -2,7 +2,7 @@ version: v1
 managed:
   enabled: true
   go_package_prefix:
-    default: github.com/bufbuild/connect-envoy-demo/internal/gen
+    default: github.com/connectrpc/envoy-demo/internal/gen
 plugins:
   - name: go
     out: internal/gen

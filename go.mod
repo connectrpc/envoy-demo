@@ -1,4 +1,4 @@
-module github.com/bufbuild/connect-envoy-demo
+module github.com/connectrpc/envoy-demo
 
 go 1.20
 

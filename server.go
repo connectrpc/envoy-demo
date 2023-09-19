@@ -22,11 +22,11 @@ import (
 	"log"
 	"net"
 
-	pingv1 "github.com/bufbuild/connect-envoy-demo/internal/gen/ping/v1"
+	pingv1 "github.com/connectrpc/envoy-demo/internal/gen/ping/v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	_ "github.com/bufbuild/connect-envoy-demo/internal/codec/json"
+	_ "github.com/connectrpc/envoy-demo/internal/codec/json"
 	_ "google.golang.org/grpc/encoding/gzip"
 )
 
