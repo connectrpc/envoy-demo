@@ -4,8 +4,8 @@ This repository contains a small demo of how to use the Connect-gRPC Envoy bridg
 ## Try it out!
 To run locally, clone this repository:
 ```sh
-git clone https://github.com/bufbuild/connect-envoy-demo
-cd connect-envoy-demo
+git clone https://github.com/connectrpc/envoy-demo
+cd envoy-demo
 ```
 
 Then run `docker-compose up` to start the demo:
