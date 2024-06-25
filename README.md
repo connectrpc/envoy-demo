@@ -17,6 +17,7 @@ After a minute or two, there should be a server listening on port 8080.
 
 It's possible to [browse to it directly](http://localhost:8080/ping.v1.PingService/Ping?connect=v1&encoding=json&message={%22number%22:2}), taking advantage of Connect's HTTP `GET` support:
 ![Screenshot of browsing to the Ping procedure with a Connect Get request in Mozilla Firefox.](./screenshot.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fconnectrpc%2Fenvoy-demo.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fconnectrpc%2Fenvoy-demo?ref=badge_shield)
 
 > **Note**:
 > The Connect-gRPC filter *requires* the Connect protocol version to be set in the request to have any effect. For GET requests, this means including `connect=v1` as a query parameter in the URL. For POST requests, this means including `Connect-Protocol-Version: 1` in the HTTP request headers. **Official Connect clients will do this automatically.**
@@ -54,3 +55,7 @@ Finally, to show all of this off in a contained environment, a [Docker Compose m
 
 ## Try it with your server!
 If you already use Envoy, please update to Envoy v1.26 and give the new Connect-gRPC bridge filter a try. Let us know how it works, and if you find any issues!
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fconnectrpc%2Fenvoy-demo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fconnectrpc%2Fenvoy-demo?ref=badge_large)
